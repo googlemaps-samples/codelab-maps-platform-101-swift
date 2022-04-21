@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0183A11CADAE267F6E91441B /* Pods_SolutionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208BD52DEA0337561EF16611 /* Pods_SolutionApp.framework */; };
 		B600328027D34E41006C7595 /* custom_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = B600327F27D34E41006C7595 /* custom_pin.png */; };
 		B600328227D35434006C7595 /* MarkerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B600328127D35434006C7595 /* MarkerGenerator.swift */; };
 		B673371A27D3414300991AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673371927D3414300991AB0 /* AppDelegate.swift */; };
@@ -18,9 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00A4B1096B1B70841DF085DC /* Pods-SolutionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutionApp.release.xcconfig"; path = "Target Support Files/Pods-SolutionApp/Pods-SolutionApp.release.xcconfig"; sourceTree = "<group>"; };
-		208BD52DEA0337561EF16611 /* Pods_SolutionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolutionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		209C52BBACEE244B1D28CD27 /* Pods-SolutionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutionApp.debug.xcconfig"; path = "Target Support Files/Pods-SolutionApp/Pods-SolutionApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B600327F27D34E41006C7595 /* custom_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custom_pin.png; sourceTree = "<group>"; };
 		B600328127D35434006C7595 /* MarkerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerGenerator.swift; sourceTree = "<group>"; };
 		B673371627D3414300991AB0 /* StarterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,37 +33,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0183A11CADAE267F6E91441B /* Pods_SolutionApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E8292E715630DF1270133C1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				208BD52DEA0337561EF16611 /* Pods_SolutionApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5349A58EE25A7391061AF1B8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				209C52BBACEE244B1D28CD27 /* Pods-SolutionApp.debug.xcconfig */,
-				00A4B1096B1B70841DF085DC /* Pods-SolutionApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		B673370D27D3414300991AB0 = {
 			isa = PBXGroup;
 			children = (
 				B673371827D3414300991AB0 /* StarterApp */,
 				B673371727D3414300991AB0 /* Products */,
-				5349A58EE25A7391061AF1B8 /* Pods */,
-				3E8292E715630DF1270133C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +77,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B673372A27D3414500991AB0 /* Build configuration list for PBXNativeTarget "StarterApp" */;
 			buildPhases = (
-				6B41C608731452408A9B0D4B /* [CP] Check Pods Manifest.lock */,
 				B673371227D3414300991AB0 /* Sources */,
 				B673371327D3414300991AB0 /* Frameworks */,
 				B673371427D3414300991AB0 /* Resources */,
-				3E311057049B76A00CAD7ACF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,48 +136,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3E311057049B76A00CAD7ACF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SolutionApp/Pods-SolutionApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SolutionApp/Pods-SolutionApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SolutionApp/Pods-SolutionApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B41C608731452408A9B0D4B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SolutionApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B673371227D3414300991AB0 /* Sources */ = {
@@ -356,14 +288,13 @@
 		};
 		B673372B27D3414500991AB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 209C52BBACEE244B1D28CD27 /* Pods-SolutionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SolutionApp/Info.plist;
+				INFOPLIST_FILE = StarterApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -385,14 +316,13 @@
 		};
 		B673372C27D3414500991AB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00A4B1096B1B70841DF085DC /* Pods-SolutionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SolutionApp/Info.plist;
+				INFOPLIST_FILE = StarterApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
